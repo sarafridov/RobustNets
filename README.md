@@ -14,7 +14,7 @@ After downloading the RobustNets dataset and code, running the program `RobustNe
 python RobustNets.py --PATH_TO_RobustNets=RobustNets --PATH_TO_c10=tempC
 ```
 
-`RobustNets.py` contains the function `iterate_over_RobustNets`, which should give you all the information you need to understand how to iterate over identifiers for each model in the RobustNets dataset. This program also contains `check_RobustNets_c10_accuracy`, which illustrates how to load these models given their identifiers. In particular, you must use the function `instantiate_model`, which takes the model identifier and the path to RobustNets as arguments: `model = instantiate_model(model_string, PATH_TO_RobustNets)`.
+`RobustNets.py` contains the function `iterate_over_RobustNets`, which shows how to iterate over the RobustNets models by creating the string identifier of each model. This program also contains `check_RobustNets_c10_accuracy`, which illustrates how to load these models given their identifiers. In particular, you must use the function `instantiate_model`, which takes the model identifier and the path to RobustNets as arguments: `model = instantiate_model(model_string, PATH_TO_RobustNets)`.
 
 ## Computing metrics
 
