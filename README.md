@@ -1,7 +1,7 @@
 # RobustNets
 RobustNets benchmark models and code.
 
-Code and model release for:
+Code and model release for the NeurIPS 2022 paper:
 
 [**Models Out of Line: A Fourier Lens on Distribution Shift Robustness**](https://arxiv.org/abs/2207.04075)
 
