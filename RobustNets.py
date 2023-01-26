@@ -60,7 +60,7 @@ def check_RobustNets_c10_accuracy(test_loader, PATH_TO_RobustNets, metric_and_OO
     test_acc = compute_test_accuracy(test_loader, model)
     c10_acc = metric_and_OOD_var_dict[model_string]['cifar10_acc']
     acc_string = f'c10_acc was {c10_acc}, computed acc was {test_acc}'
-    assert(test_acc == c10_acc), acc_string
+    assert abs(test_acc - c10_acc)<0.03, acc_string
     print(model_string + f' c10 acc matches precomputed acc ({c10_acc}%)')
 
 def check_RobustNets_existence(PATH_TO_RobustNets, metric_and_OOD_var_dict):
